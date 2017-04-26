@@ -86,6 +86,7 @@ build:
           cp -R ./ ${WERCKER_OUTPUT_DIR}
 
 deploy:
+  box: golang:alpine
   steps:
     - internal/docker-push:
         username: $DOCKER_USERNAME
