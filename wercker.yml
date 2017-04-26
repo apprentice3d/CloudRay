@@ -3,10 +3,11 @@
 # If you want Google's container you would reference google/golang
 # Read more about containers on our dev center
 # http://devcenter.wercker.com/docs/containers/index.html
-box: golang
 
 
 dev:
+  box: golang
+
   steps:
     - setup-go-workspace:
         package-dir: github.com/apprentice3d/CloudRay
@@ -43,6 +44,8 @@ dev:
     # - mongo
     # http://devcenter.wercker.com/docs/services/mongodb.html
 build:
+  box: golang
+
   # The steps that will be executed on build
   # Steps make up the actions in your pipeline
   # Read more about steps on our dev center:
