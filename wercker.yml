@@ -86,7 +86,7 @@ build:
 
 deploy:
   box:
-    id: alpine:latest
+    id: ubuntu:latest
     cmd: /bin/sh
   steps:
     - internal/docker-push:
