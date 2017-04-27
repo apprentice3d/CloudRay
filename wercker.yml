@@ -92,7 +92,7 @@ deploy:
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
-        cmd: /pipeline/source/CloudRay
+        entrypoint: /pipeline/source/CloudRay
         port: "3009"
         tag: latest
         repository: apprentice3d/cloudray
