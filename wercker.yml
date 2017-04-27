@@ -87,7 +87,7 @@ build:
 deploy:
   box:
     id: ubuntu:latest
-    cmd: /bin/sh
+    cmd: /bin/bash
   steps:
     - internal/docker-push:
         username: $DOCKER_USERNAME
