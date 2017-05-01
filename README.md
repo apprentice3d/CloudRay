@@ -1,2 +1,2 @@
 # CloudRay
-An example of cloud rendering service, implemented in Go
+An example of cloud rendering service, implemented in Go.
